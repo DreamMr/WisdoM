@@ -19,7 +19,7 @@ def contextual_fusion(prob_ori, prob_context, alpha, beta):
 
 if __name__ == '__main__':
     # model path
-    lvlm_path = r'liuhaotian/llava-v1.5-13b'
+    lvlm_path = r'llava-v1.5-13b'
     msa_path = r'YOUR MODEL PATH'
     
     # prompt template
