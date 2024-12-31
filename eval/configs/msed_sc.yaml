@@ -1,6 +1,6 @@
 max_seq_len: 2048 # max sequence length
 max_new_tokens: 512 # max output sequence length
-batch_size: 16 # no use!!!
+batch_size: 1 # no use!!!
 
 engine:
   engine_name: multimodalgeneratedengine # Running engine name must be consistent with the engine name under the "engines" folder.
