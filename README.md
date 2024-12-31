@@ -44,7 +44,7 @@ We also provide a Jupyter Notebook [demo](./run.ipynb). You can view and interac
 2. Start evaluation!
 
     ```
-    cd scripts
+    cd eval/scripts
     bash run_eval_mmicl_msed.sh
     ```
     **config_path:** Configuration file path for evaluation. If you want to evaluate MMICL w/ WisdoM, please set `use_wisdom: true` in `./eval/configs/msed_sc.yaml`.
