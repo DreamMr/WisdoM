@@ -1,0 +1,9 @@
+models:
+  model_name: mmicl # The model name must be consistent with the model name under the "models" folder.
+  params:
+    path: DreamMr/MMICL_MSED # huggingface model path
+    processor_path: Salesforce/instructblip-flan-t5-xxl # huggingface processor path
+
+use_distributed: true # Multi-GPU inference
+task_list:
+  msed: configs/msed_sc.yaml # task config path

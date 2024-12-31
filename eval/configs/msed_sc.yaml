@@ -1,0 +1,19 @@
+max_seq_len: 2048 # max sequence length
+max_new_tokens: 512 # max output sequence length
+batch_size: 16 # no use!!!
+
+engine:
+  engine_name: multimodalgeneratedengine # Running engine name must be consistent with the engine name under the "engines" folder.
+  params:
+    use_wisdom: true # whether to use wisdom
+    alpha: 0.85 # the parameter of contextual fusion module in wisdom
+    theta: 0.79 # the parameter of contextual fusion module in wisdom
+experiment_name: mmicl_msed_test # experiment name
+dataset:
+  dataset_name: mseddataset # dataset name must be consistent with the name in the "datasets" folder.
+  params:
+    path: ./data # the path of evaluation data
+    image_root: ./data/MSED/test/images # the image path of evaluation data
+    context_path: ./data/contexts/test.json # the path of context.
+    preffix_context: "Sentence: \"{}\". Context: \"{}\". Using the context as a textual aids to help you answer the question. Use the image 0: <image0>图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图 as a visual aids to help you answer the question. Question: according to the image 0 and sentence, what is the sentiment polarity? Choose from the following options:\nA).positive\nB).neutral\nC).negative\n\nAnswer: " # the prompt template with context
+    preffix: "Sentence: \"{}\". Use the image 0: <image0>图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图图 as a visual aids to help you answer the question. Question: according to the image 0 and sentence, what is the sentiment polarity? Choose from the following options:\nA).positive\nB).neutral\nC).negative\n\nAnswer: " # the prompt template
