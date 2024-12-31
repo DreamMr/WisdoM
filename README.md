@@ -5,7 +5,7 @@
 # News
 **[2025.01.01]**   🎉 Happy New Year! We have released the **pretrained weight [MMICL-MSED](https://huggingface.co/DreamMr/MMICL_MSED)** and the **evaluation code**.
 
-**[2024.07.21]**   🥳 Our work was accepted by MM 2024.
+**[2024.07.21]**   🥳 Our work was accepted by ACM MM 2024.
 
 # Contents
 - [Overview](#overview)
